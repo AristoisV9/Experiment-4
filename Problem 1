@@ -15,32 +15,44 @@ int main()
 	{
 		cout<<"MENU:\n\t1. Add\n\t2. Subtract\n\t3. Multiply\n\t4. Divide\n\t5. Modulus\nEnter you choice: ";
 		cin >> x;
-		cout<<"Enter your two numbers: ";
-		cin >> y;
-		cin >> z;
 		
 		if(x==1)
 		{
+			cout<<"Enter your two numbers: ";
+			cin >> y;
+			cin >> z;
 			res = y + z;
 			cout<<"Answer: "<< res;
 		}
 		else if(x==2)
 		{
+			cout<<"Enter your two numbers: ";
+			cin >> y;
+			cin >> z;
 			res = y - z;
 			cout<<"Answer: "<< res;
 		}
 		else if(x==3)
 		{
+			cout<<"Enter your two numbers: ";
+			cin >> y;
+			cin >> z;
 			res = y * z;
 			cout<<"Answer: "<< res;
 		}
 		else if(x==4)
 		{
+			cout<<"Enter your two numbers: ";
+			cin >> y;
+			cin >> z;
 			res = y / z;
 			cout<<"Answer: "<< res;
 		}
 		else if(x==5)
 		{
+			cout<<"Enter your two numbers: ";
+			cin >> y;
+			cin >> z;
 			res = y % z;
 			cout<<"Answer: "<< res;
 		}
