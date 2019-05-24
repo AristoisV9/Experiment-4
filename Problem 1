@@ -1,0 +1,64 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	int y;
+	int z;
+	int res;
+	char cont;
+	int yes;
+	
+	do
+	{
+		cout<<"MENU:\n\t1. Add\n\t2. Subtract\n\t3. Multiply\n\t4. Divide\n\t5. Modulus\nEnter you choice: ";
+		cin >> x;
+		cout<<"Enter your two numbers: ";
+		cin >> y;
+		cin >> z;
+		
+		if(x==1)
+		{
+			res = y + z;
+			cout<<"Answer: 2"<< res;
+		}
+		else if(x==2)
+		{
+			res = y - z;
+			cout<<"Answer: "<< res;
+		}
+		else if(x==3)
+		{
+			res = y * z;
+			cout<<"Answer: "<< res;
+		}
+		else if(x==4)
+		{
+			res = y / z;
+			cout<<"Answer: "<< res;
+		}
+		else if(x==5)
+		{
+			res = y % z;
+			cout<<"Answer: "<< res;
+		}
+		else
+			cout<<"Invalid Input!";
+			
+		cout<<"\nPress 'y' to continue!";
+		
+		cin>> cont;
+		if(cont != 'y')
+		{
+			cout<<"Goodbye!";
+			return 0;
+		}
+		else
+			yes = 1;
+		
+	}while(yes == 1);
+	
+	return 0;
+}
