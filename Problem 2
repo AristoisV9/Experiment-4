@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int arr[50];
+	int a;
+	int b;
+	int c;
+	int temp;
+	
+	cout<<"Selection sorting...\nEnter the array size: ";
+	cin>>a;
+	cout<<"Enter the "<< a <<" elements!\n";
+	for(b=0;b<a;b++)
+		cin>>arr[b];
+
+	cout<<"\nYour Data: ";
+	for(b=0;b<a;b++)
+		cout<<arr[b]<<"  ";
+		
+	for(b=0;b<a;b++)
+	{		
+		for(c=b+1;c<a;c++)
+		{
+			if(arr[b]>arr[c])
+			{
+				temp  =arr[b];
+				arr[b]=arr[c];
+				arr[c]=temp;
+			}
+		}
+	}
+		
+	cout<<"\n\nAfter using sorting program... \n";
+	for(b=0;b<a;b++)
+		cout<<arr[b]<<"  ";
+	
+	cin.ignore();
+	return 0;
+}
