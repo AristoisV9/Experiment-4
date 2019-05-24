@@ -22,7 +22,7 @@ int main()
 		if(x==1)
 		{
 			res = y + z;
-			cout<<"Answer: 2"<< res;
+			cout<<"Answer: "<< res;
 		}
 		else if(x==2)
 		{
